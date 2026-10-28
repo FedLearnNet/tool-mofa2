@@ -39,8 +39,8 @@ config:
     type: IMAGE
     description: PNG heatmap of MOFA weights.
 info:
-  name: tool-mofa2
-  slug: tool-mofa2
+  name: mofa2
+  slug: mofa2
   type: SELF_LEARNED
   sourceUrl: https://github.com/FedLearnNet/tool-mofa2
   shortDescription: Explores trained MOFA models and exports latent factors, feature

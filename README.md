@@ -1,4 +1,4 @@
-# tool-mofa2
+# mofa2
 
 Explores trained MOFA models and exports latent factors, feature weights, and ranked features.
 
