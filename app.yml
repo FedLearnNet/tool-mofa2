@@ -1,0 +1,48 @@
+config:
+  hyperparams:
+  - name: n_top_features
+    type: INTEGER
+    required: false
+    default: 20
+    minValue: 1
+    description: Number of top absolute-weight features to export per factor.
+  - name: export_weights
+    type: BOOLEAN
+    required: false
+    default: true
+    description: Export the factor loadings matrix.
+  - name: export_factors
+    type: BOOLEAN
+    required: false
+    default: true
+    description: Export the factor values matrix.
+  - name: export_top_features
+    type: BOOLEAN
+    required: false
+    default: true
+    description: Export ranked top features per factor.
+  input: []
+  output:
+  - name: factors
+    type: CSV
+    description: Exported factor matrix (Z).
+  - name: weights
+    type: CSV
+    description: Exported weights/loadings matrix (W).
+  - name: top_features
+    type: CSV
+    description: Ranked top features per factor based on absolute weight.
+  - name: report
+    type: HTML
+    description: HTML summary report of the explored model.
+  - name: weights_plot
+    type: IMAGE
+    description: PNG heatmap of MOFA weights.
+info:
+  name: tool-mofa2
+  slug: tool-mofa2
+  type: SELF_LEARNED
+  sourceUrl: https://github.com/FedLearnNet/tool-mofa2
+  shortDescription: Explores trained MOFA models and exports latent factors, feature
+    weights, and ranked features.
+  longDescription: null
